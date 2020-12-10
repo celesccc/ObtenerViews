@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/darkcolor">
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/user"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintEditText1"
+        android:textSize="20sp"
+        android:background="@color/lightpink"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintEditText2"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:background="@color/lightpink"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/pink"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:enabled="false"/>
+
+    <ImageView
+        android:id="@+id/tickImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/tick"
+        app:tint="@color/purple_200"
+        android:visibility="gone"/>
+
+</LinearLayout>

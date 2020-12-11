@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_main)
+        //setContentView(R.layout.activity_main)    // Línea necesaria para las FORMAS 1 y 2
 
         // Siguiente dos líneas necesarias para la FORMA 3:
         val binding = ActivityMainBinding.inflate(layoutInflater)
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
         //////////////////////////////////////////////////////////////////////////////////////////////
 
-        // FORMA 1: Creando los elementos necesarios
+        // FORMA 1: Creando las vistas necesarias
         /*val tick = findViewById<ImageView>(R.id.tickImage)
         boton = findViewById<Button>(R.id.button)
         etUser = findViewById<EditText>(R.id.editTextUser)
